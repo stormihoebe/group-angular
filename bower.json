@@ -1,0 +1,17 @@
+{
+  "name": "group-mentor-meetup",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Stormi Hoebelheinrich <stormihoebe@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
