@@ -8,9 +8,11 @@ import { EventService } from "../event.service";
 })
 export class EditEventComponent implements OnInit {
 @Input() selectedEvent;
-  constructor() { }
+  constructor(private eventService: EventService) { }
 
-  ngOnInit(private eventService: EventService) {
+  ngOnInit() {
   }
-
+  editEventClicked(selectedEvent){
+    this.eventService.updateEvent(selectedEvent);
+  }
 }

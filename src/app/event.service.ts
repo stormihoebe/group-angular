@@ -19,4 +19,18 @@ export class EventService {
 addEvent(newEvent: Event) {
   this.events.push(newEvent);
 }
+
+updateEvent(updatedEvent){
+  var eventEntryInFirebase = this.getEventById(updatedEvent.$key);
+  eventEntryInFirebase.update({title: updatedEvent.title,
+                              topic: updatedEvent.topic,
+                              date: updatedEvent.date,
+                              time: updatedEvent.time,
+                              location: updatedEvent.location,
+                              mentor: updatedEvent.mentor,
+                              maximum: updatedEvent.maximum,
+                              guests: updatedEvent.guests,
+                              image: updatedEvent.image,
+                              description: updatedEvent.description,});
+}
 }
