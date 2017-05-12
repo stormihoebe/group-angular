@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { MeetupSearchComponent } from './meetup-search/meetup-search.component';
-
+import {EventService} from './event.service'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,7 @@ import { MeetupSearchComponent } from './meetup-search/meetup-search.component';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [EventService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
