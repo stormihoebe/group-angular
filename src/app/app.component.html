@@ -1,3 +1,46 @@
-<h1>
-  {{title}}
-</h1>
+<div class="page-wrap">
+
+<nav>
+  <div class="nav-wrapper">
+    <div class="container">
+
+    <a routerLink='' class="brand-logo right">Group Mentorship Meetup</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li><a >Home</a></li>
+      <li><a >Meetups</a></li>
+      <li><a >About</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<div class="container">
+
+  <router-outlet></router-outlet>
+
+</div>
+
+</div>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Technologies Used</h5>
+        <ul class="grey-text text-lighten-4">
+            <li>Angular CLI</li>
+            <li>Firebase</li>
+            <li>Materialize CSS</li>
+        </ul>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://github.com/stormihoebe/fund-finder">Github</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="container grey-text text-lighten-3">
+    © 2017 Stormi Hoebelheinrich
+    </div>
+  </div>
+</footer>
