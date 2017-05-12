@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 })
 export class MeetupSearchComponent implements OnInit {
   events;
+  currentRoute: string = this.router.url;
   constructor(public eventService: EventService, public router: Router) { }
 
   ngOnInit() {

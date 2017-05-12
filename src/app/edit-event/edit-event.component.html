@@ -1,3 +1,45 @@
-<p>
-  edit-event works!
-</p>
+<h3>Edit Event</h3>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input name="Event Name" [(ngModel)] ="selectedEvent.title" class="validate">
+      </div>
+      <div class="input-field col s6">
+        <input name="Mentor Name" [(ngModel)] ="selectedEvent.mentor" class="validate">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input name="Topic Area" [(ngModel)] ="selectedEvent.topic" class="validate">
+      </div>
+      <div class="input-field col s6">
+        <input name="Location" [(ngModel)] ="selectedEvent.location" class="validate">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input name="Date" [(ngModel)] ="selectedEvent.date" class="validate">
+      </div>
+      <div class="input-field col s6">
+        <input name="Time" [(ngModel)] ="selectedEvent.time" class="validate">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input name="Event Description" [(ngModel)] ="selectedEvent.description" class="validate">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input name="Maximum Number of Guests" type="number" [(ngModel)] ="selectedEvent.maximum" class="validate">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input name="Image URL" [(ngModel)] ="selectedEvent.image" class="validate">
+      </div>
+    </div>
+    <a class="waves-effect waves-light btn">Submit</a>
+  </form>
+</div>
