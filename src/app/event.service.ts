@@ -33,4 +33,8 @@ updateEvent(updatedEvent){
                               image: updatedEvent.image,
                               description: updatedEvent.description,});
 }
+deleteEvent(eventToDelete){
+  var eventEntryInFirebase = this.getEventById(eventToDelete.$key);
+    eventEntryInFirebase.remove();
+}
 }
