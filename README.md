@@ -1,10 +1,36 @@
-# GroupMentorMeetup
+# Group Mentorship Meetup
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+## Planning
+
+models:
+  Event (title, topic, date, time, location, mentor, description, maximum, guests, image)
+components:
+  home
+  about
+  all-events
+  new-event
+  edit-event
+services:
+  event.service
+pipe:
+  topic
+
+
+## Getting Started with Fund Finder
+1. git clone directory `git clone https://github.com/stormihoebe/group-angular.git`
+* Open fund-finder directory `cd fund-finder`
+* Install Angular CLI `npm install -g @angular/cli@1.0.0`
+* Install Typescript `npm install -g typescript`
+* Install Bower `npm install bower -g`
+* Initiate Bower `bower init`
+* Install Materialize (CSS) `bower install materialize`
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Run development server `ng serve`
+* Navigate to `http://localhost:4200/`.
 
 ## Code scaffolding
 
