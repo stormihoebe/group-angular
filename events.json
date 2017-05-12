@@ -1,0 +1,39 @@
+{ "projects": [{
+    "title": "Mentorship for Junior Java Developers",
+    "topic": "Java",
+    "date": "06/13/2017",
+    "time": "4-7pm",
+    "location": "Downtown Portland, OR",
+    "mentor": "Robi Marlyn",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "maximum": "12",
+    "guests": "0",
+    "image": "http://6798-presscdn-0-89.pagely.netdna-cdn.com/wp-content/uploads/2015/03/NJ-Tech-Meetup_Hoboken-e1425935269237.jpeg"
+    },
+    {
+    "title": "Mentorship for Female JavaScript Developers",
+    "topic": "JavaScript",
+    "date": "05/29/2017",
+    "time": "5-8pm",
+    "location": "SE Portland, OR",
+    "mentor": "Sarah Walls",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "maximum": "15",
+    "guests": "0",
+    "image": "http://cdn.mos.cms.futurecdn.net/4d64cc5b78b4f52bbe96ef8aa8bbd7c3.jpg"
+    },
+    {
+    "title": "LGBTQA+ in Tech Mentorship",
+    "topic": "Diversity",
+    "date": "08/14/2017",
+    "time": "4-7pm",
+    "location": "Downtown Portland, OR",
+    "mentor": "Shanna Martin",
+
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "maximum": "25",
+    "guests": "0",
+    "image": "http://quickerlearning.com/wp-content/uploads/2016/08/work-typing-computer-notebook-programming-business.jpg"
+    },
+  ]
+}
