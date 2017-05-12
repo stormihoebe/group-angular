@@ -22,6 +22,8 @@ export class EventDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
      this.eventId = parseInt(urlParameters['id']);
    });
-   this.eventToDisplay = this.eventService.getEventById(this.eventId);
+   this.eventService.getEventById(this.eventId).subscribe(dataLastEmittedFromObserver =>{
+     this.eventToDisplay = dataLastEmittedFromObserver;
+   })
   }
 }
