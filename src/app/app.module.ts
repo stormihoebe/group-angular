@@ -7,12 +7,14 @@ import { routing } from  './app.routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { MeetupSearchComponent } from './meetup-search/meetup-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    MeetupSearchComponent
   ],
   imports: [
     BrowserModule,
