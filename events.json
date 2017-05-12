@@ -1,4 +1,4 @@
-{ "projects": [{
+{ "events": [{
     "title": "Mentorship for Junior Java Developers",
     "topic": "Java",
     "date": "06/13/2017",
@@ -29,11 +29,10 @@
     "time": "4-7pm",
     "location": "Downtown Portland, OR",
     "mentor": "Shanna Martin",
-
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
     "maximum": "25",
     "guests": "0",
     "image": "http://quickerlearning.com/wp-content/uploads/2016/08/work-typing-computer-notebook-programming-business.jpg"
-    },
+    }
   ]
 }
