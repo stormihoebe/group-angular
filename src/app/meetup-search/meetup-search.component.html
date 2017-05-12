@@ -1,3 +1,24 @@
-<p>
-  meetup-search works!
-</p>
+<h1>Group Mentorship Events</h1>
+
+<div class="col s12 m7">
+    <div  *ngFor="let event of events | async" class="card horizontal">
+      <div class="card-image">
+        <img src="{{event.image}}" alt="{{event.title}}'s cover photo">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <span class="card-title">{{event.title}}</span>
+
+          <h6>
+            Mentor: {{event.mentor}}
+          </h6>
+          <br>
+          <p>{{event.location}}</p>
+          <p>{{event.date}}, {{event.time}}</p>
+        </div>
+        <div class="card-action">
+          <a>Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>

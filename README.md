@@ -7,8 +7,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 models:
   Event (title, topic, date, time, location, mentor, description, maximum, guests, image)
 components:
-  home
-  about
+  home x
+  about x
   all-events
   new-event
   edit-event
