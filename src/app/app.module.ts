@@ -14,6 +14,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { EventDetailComponent } from './event-detail/event-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditEventComponent } from './edit-event/edit-event.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     AboutComponent,
     MeetupSearchComponent,
     EventDetailComponent,
-    AdminComponent
+    AdminComponent,
+    EditEventComponent
   ],
   imports: [
     BrowserModule,

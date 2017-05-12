@@ -11,7 +11,6 @@ export class EventService {
  }
 
  getEvents(){
-   console.log("HEY getEvents Here!");
    return this.events;
  }
  getEventById(eventId: string){
