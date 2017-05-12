@@ -15,8 +15,8 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(title: string, topic: string, date: string, time: string, location: string, mentor: string, description: string, maximum: number, guests: number, image:string) {
-    var newEvent: Event = new Event(title, topic, date, time, location, mentor, description, maximum, guests, image);
+  submitForm(title: string, topic: string, date: string, time: string, location: string, mentor: string, description: string, maximum: string, image:string) {
+    var newEvent: Event = new Event(title, topic, date, time, location, mentor, description, parseInt(maximum), 0, image);
     this.eventService.addEvent(newEvent);
   }
 }
