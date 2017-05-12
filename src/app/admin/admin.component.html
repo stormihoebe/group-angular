@@ -1,3 +1,46 @@
-<p>
-  admin works!
-</p>
+<h1>Add New Meetup</h1>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="Event Name" #newTitle class="validate">
+      </div>
+      <div class="input-field col s6">
+        <input placeholder="Mentor Name" #newMentor class="validate">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="Topic Area" #newTopic class="validate">
+      </div>
+      <div class="input-field col s6">
+        <input placeholder="Location" #newLocation class="validate">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="Date" #newDate class="validate">
+      </div>
+      <div class="input-field col s6">
+        <input placeholder="Time" #newTime class="validate">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input placeholder="Event Description" #newDescription class="validate">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input placeholder="Maximum Number of Guests" type="number" #newGuests class="validate">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input placeholder="Image URL" #newImage class="validate">
+      </div>
+    </div>
+    <a (click)="submitNewProject(newTitle.value, newTopic.value, newDate.value, newTime.value, newLocation.value, newMentor.value, newDescription.value, newMaximum.value, newGuests.value, newImage.value)" class="waves-effect waves-light btn">Submit</a>
+
+  </form>
+</div>
