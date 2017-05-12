@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { MeetupSearchComponent } from './meetup-search/meetup-search.component';
+import { EventDetailComponent } from './event-detail/event-detail.component';
 
 
 const appRoutes: Routes = [
@@ -17,6 +18,10 @@ const appRoutes: Routes = [
   {
     path: 'events',
     component: MeetupSearchComponent
+  },
+  {
+    path: 'events/:id',
+    component: EventDetailComponent
   }
 ];
 

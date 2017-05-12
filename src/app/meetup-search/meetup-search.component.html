@@ -17,7 +17,7 @@
           <p>{{event.date}}, {{event.time}}</p>
         </div>
         <div class="card-action">
-          <a>Learn More</a>
+          <a (click)="goToDetailPage(event)">Learn More</a> <span class="right">{{event.guests}} of {{event.maximum}} Spaces Taken</span>
         </div>
       </div>
     </div>

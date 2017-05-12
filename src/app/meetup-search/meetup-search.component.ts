@@ -17,5 +17,7 @@ export class MeetupSearchComponent implements OnInit {
   ngOnInit() {
     this.events= this.eventService.getEvents();
   }
-
+  goToDetailPage(clickedEvent) {
+      this.router.navigate(['events', clickedEvent.$key]);
+    }
 }

@@ -12,6 +12,7 @@ import {EventService} from './event.service';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { EventDetailComponent } from './event-detail/event-detail.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     AppComponent,
     HomeComponent,
     AboutComponent,
-    MeetupSearchComponent
+    MeetupSearchComponent,
+    EventDetailComponent
   ],
   imports: [
     BrowserModule,
