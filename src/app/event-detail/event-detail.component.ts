@@ -14,10 +14,14 @@ export class EventDetailComponent implements OnInit {
   eventToDisplay;
   constructor(private route: ActivatedRoute, private location: Location, private eventService: EventService) { }
 
+  rsvpButtonClicked(){
+    console.log(this.eventId);
+  }
+
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
      this.eventId = parseInt(urlParameters['id']);
    });
    this.eventToDisplay = this.eventService.getEventById(this.eventId);
   }
-  }
+}
