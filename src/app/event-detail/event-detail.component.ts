@@ -15,7 +15,8 @@ export class EventDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private location: Location, private eventService: EventService) { }
 
   rsvpButtonClicked(){
-    console.log(this.eventId);
+    console.log("number of guests: " + this.eventToDisplay.guests);
+    this.eventService.addNewGuest(this.eventToDisplay);
   }
 
   ngOnInit() {
@@ -24,7 +25,6 @@ export class EventDetailComponent implements OnInit {
    });
    this.eventService.getEventById(this.eventId).subscribe(dataLastEmittedFromObserver =>{
      this.eventToDisplay = dataLastEmittedFromObserver;
-     console.log(this.eventId);
    })
   }
 }

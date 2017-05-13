@@ -37,4 +37,11 @@ deleteEvent(eventToDelete){
   var eventEntryInFirebase = this.getEventById(eventToDelete.$key);
     eventEntryInFirebase.remove();
 }
+addNewGuest(event){
+  var eventEntryInFirebase = this.getEventById(event.$key);
+  var newGuests: number = 1 + parseInt(event.guests);
+  eventEntryInFirebase.update({
+    guests: newGuests
+  });
+}
 }
