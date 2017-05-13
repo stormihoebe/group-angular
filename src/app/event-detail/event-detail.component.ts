@@ -20,10 +20,11 @@ export class EventDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-     this.eventId = parseInt(urlParameters['id']);
+     this.eventId =urlParameters['id'];
    });
    this.eventService.getEventById(this.eventId).subscribe(dataLastEmittedFromObserver =>{
      this.eventToDisplay = dataLastEmittedFromObserver;
+     console.log(this.eventId);
    })
   }
 }
