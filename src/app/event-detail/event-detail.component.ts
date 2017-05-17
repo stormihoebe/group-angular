@@ -24,7 +24,7 @@ export class EventDetailComponent implements OnInit {
      this.eventId =urlParameters['id'];
    });
    this.eventService.getEventById(this.eventId).subscribe(dataLastEmittedFromObserver =>{
-     this.eventToDisplay = dataLastEmittedFromObserver;
-   })
+      this.eventToDisplay = dataLastEmittedFromObserver;
+    })
   }
 }

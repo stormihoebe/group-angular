@@ -2,14 +2,16 @@ import { Pipe, PipeTransform } from '@angular/core';
 import {Event} from './event.model';
 
 @Pipe({
-  name: 'topic',
+  name: "topic",
   pure: false
 })
 export class TopicPipe implements PipeTransform {
 
   transform(input: Event[], desiredTopic) {
-
     var output: Event[] = [];
+    if(input){
+
+
     if(desiredTopic === "All") {
       for (var i = 0; i < input.length; i++) {
          output.push(input[i]);
@@ -57,5 +59,6 @@ export class TopicPipe implements PipeTransform {
    }
    return output;
   }
-  }
+}
+}
 }

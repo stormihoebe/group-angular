@@ -33,7 +33,7 @@
   </div>
 <div class="col s12 m7" *ngIf ="filterTopic">
 
-    <div  *ngFor="let event of events | async |topic:filterTopic" class="card horizontal">
+    <div  *ngFor="let event of events | async | topic:filterTopic" class="card horizontal">
       <div *ngIf="currentRoute !== '/admin'" class="card-image">
         <img src="{{event.image}}" alt="{{event.title}}'s cover photo">
       </div>
