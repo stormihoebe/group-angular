@@ -3,6 +3,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 import { Event } from '../event.model';
 import { EventService } from '../event.service';
 import { Router } from '@angular/router';
+import { TopicPipe } from '../topic.pipe';
 
 @Component({
   selector: 'app-meetup-search',
@@ -12,6 +13,7 @@ import { Router } from '@angular/router';
 })
 export class MeetupSearchComponent implements OnInit {
   events;
+  filterTopic: string = "All";
   currentRoute: string = this.router.url;
   constructor(public eventService: EventService, public router: Router) { }
 
@@ -21,4 +23,7 @@ export class MeetupSearchComponent implements OnInit {
   goToDetailPage(clickedEvent) {
       this.router.navigate(['events', clickedEvent.$key]);
     }
+  onChangeTopic(value){
+    this.filterTopic = value;
+  }
 }

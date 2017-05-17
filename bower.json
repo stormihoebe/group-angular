@@ -6,7 +6,7 @@
     "Stormi Hoebelheinrich <stormihoebe@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/stormihoebe/group-angular",
   "ignore": [
     "**/.*",
     "node_modules",

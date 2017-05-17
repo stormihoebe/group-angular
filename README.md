@@ -20,7 +20,7 @@ pipe:
 
 ## Getting Started with Fund Finder
 1. git clone directory `git clone https://github.com/stormihoebe/group-angular.git`
-* Open fund-finder directory `cd fund-finder`
+* Open fund-finder directory `cd group-angular`
 * Install Angular CLI `npm install -g @angular/cli@1.0.0`
 * Install Typescript `npm install -g typescript`
 * Install Bower `npm install bower -g`

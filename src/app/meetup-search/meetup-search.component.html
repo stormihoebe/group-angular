@@ -1,7 +1,39 @@
 <h1>Group Mentorship Events</h1>
+<div id="radioForm" class = "row" (change)="onChangeTopic($event.target.value)">
+  <div class="col s2">
+      <p>
+        <input name="group1" type="radio" id="test5" value="All">
+        <label for="test5">All</label>
+      </p>
+      <p>
+        <input name="group1" type="radio" id="test6" value="Java">
+        <label for="test6">Java</label>
+      </p>
+    </div>
+    <div class="col s2">
+      <p>
+        <input name="group1" type="radio" id="test1" value="JavaScript">
+        <label for="test1">JavaScript</label>
+      </p>
+      <p>
+        <input name="group1" type="radio" id="test2" value="Diversity">
+        <label for="test2">Diversity</label>
+      </p>
+    </div>
+    <div class="col s3">
+      <p>
+        <input name="group1" type="radio" id="test3" value="Career Development">
+        <label for="test3">Career Development</label>
+      </p>
+      <p>
+        <input name="group1" type="radio" id="test4" value="Other">
+        <label for="test4">Other</label>
+      </p>
+    </div>
+  </div>
+<div class="col s12 m7" *ngIf ="filterTopic">
 
-<div class="col s12 m7">
-    <div  *ngFor="let event of events | async" class="card horizontal">
+    <div  *ngFor="let event of events | async |topic:filterTopic" class="card horizontal">
       <div *ngIf="currentRoute !== '/admin'" class="card-image">
         <img src="{{event.image}}" alt="{{event.title}}'s cover photo">
       </div>

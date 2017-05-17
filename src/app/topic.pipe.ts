@@ -8,7 +8,8 @@ import {Event} from './event.model';
 export class TopicPipe implements PipeTransform {
 
   transform(input: Event[], desiredTopic) {
-    var output: Event[];
+
+    var output: Event[] = [];
     if(desiredTopic === "All") {
       for (var i = 0; i < input.length; i++) {
          output.push(input[i]);
@@ -35,14 +36,26 @@ export class TopicPipe implements PipeTransform {
     }
   }
   return output;
-} else if (desiredTopic === "Other"){
+} else if (desiredTopic === "Diversity"){
   for (var i = 0; i < input.length; i++) {
-    if (input[i].topic !== "JavaScript" || "Career Development" || "Java"){
+    if (input[i].topic === "Diversity") {
       output.push(input[i]);
     }
   }
   return output;
 }
-}
-
+ else if (desiredTopic === "Other"){
+  for (var i = 0; i < input.length; i++) {
+    if ((input[i].topic !== "JavaScript" )||( input[i].topic !== "Career Development") || (input[i].topic !=="Java")){
+      output.push(input[i]);
+    }
+  }
+  return output;
+} else {
+  for (var i = 0; i < input.length; i++) {
+     output.push(input[i]);
+   }
+   return output;
+  }
+  }
 }
